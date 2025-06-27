@@ -5,7 +5,7 @@
 1. На хосте Linux установить и запустить службы `rsyslog` и `auditd`.  
    
 2. Загрузить на хост Linux файл `kuma_auditd.sh` и сделать его исполняемым:  
-`chmod +x kuma_auditd.sh`  
+```chmod +x kuma_auditd.sh```  
 
 3. Загрузить на сервер KUMA (для распределенной архитектуры на сервер коллектора) в папку /opt/ файл с правилами (альтернативный вариант, загрузить файл с правилами на хост, где выполняется запуск скрипта):  
 `wget -O /opt/audit.rules https://raw.githubusercontent.com/Neo23x0/auditd/master/audit.rules`  
